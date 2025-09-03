@@ -12,8 +12,7 @@ This project is the implementation for the **Junior Front-end Engineer Assignmen
 ---
 
 ## 🚀 Getting Started
-
-### 1. Clone the repository
+ 1. Clone the repository
 ```bash
 git clone https://github.com/PhanTKAnh/TEST_FE_RFX.git
 cd TEST_FE_RFX
