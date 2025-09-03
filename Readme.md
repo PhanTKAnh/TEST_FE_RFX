@@ -17,6 +17,7 @@ This project is the implementation for the **Junior Front-end Engineer Assignmen
 git clone https://github.com/PhanTKAnh/TEST_FE_RFX.git
 cd TEST_FE_RFX
  2. Install dependencies
+```bash
 Navigate to each folder and install:
 # Database
 cd database
@@ -27,6 +28,7 @@ cd test-fe
 npm install
 
  3. Start the development servers
+```bash
 # Start the database server
 npm start
 # Runs at: http://localhost:8000/locations
@@ -34,6 +36,7 @@ npm start
 # Start the frontend
 npm start
 # Runs at: http://localhost:3000
+```bash
 Open the Home page (/) → You will see 3 buttons linking to each assignment:
 
 A1 → http://localhost:3000/a1
@@ -42,6 +45,7 @@ A2 → http://localhost:3000/a2
 
 A3 → http://localhost:3000/a3
 Assignment Details
+```bash
 🔹 A1: Layout Implementation
 
 Pixel-perfect layout from Figma.
