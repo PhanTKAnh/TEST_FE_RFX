@@ -16,7 +16,7 @@ This project is the implementation for the **Junior Front-end Engineer Assignmen
 ```bash
 git clone https://github.com/PhanTKAnh/TEST_FE_RFX.git
 cd TEST_FE_RFX
-2. Install dependencies
+ 2. Install dependencies
 Navigate to each folder and install:
 # Database
 cd database
@@ -26,7 +26,7 @@ npm install
 cd test-fe
 npm install
 
-3. Start the development servers
+ 3. Start the development servers
 # Start the database server
 npm start
 # Runs at: http://localhost:8000/locations
