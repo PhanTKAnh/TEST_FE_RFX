@@ -1,14 +1,10 @@
 import { useState } from "react";
 
 export default function LocationList({ locations, selected, handleSelect, listRef }) {
-  const [visibleCount, setVisibleCount] = useState(10); // số item hiển thị ban đầu
-  const increment = 10; // mỗi lần nhấn load thêm bao nhiêu item
-
-  const visibleLocations = locations.slice(0, visibleCount);
 
   return (
     <div className="ml-list">
-      {visibleLocations.map((loc) => (
+      {locations.map((loc) => (
         <div
           key={loc.id}
           ref={(el) => (listRef.current[loc.id] = el)}
@@ -21,13 +17,6 @@ export default function LocationList({ locations, selected, handleSelect, listRe
         </div>
       ))}
 
-      {visibleCount < locations.length && (
-        <button className="btn-lead-more"
-          onClick={() => setVisibleCount(visibleCount + increment)}
-        >
-          Load More
-        </button>
-      )}
     </div>
   );
 }
