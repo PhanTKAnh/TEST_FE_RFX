@@ -1,0 +1,101 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montez&display=swap');
+
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ ul, ol {
+  list-style: none;
+}
+
+ input, button, textarea, select {
+  outline: none;
+  font: inherit;
+  background-color: transparent;
+  border: none;
+}
+
+ button {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+ img {
+  display: block;
+  max-width: 100%;
+}
+
+ a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Biến CSS */
+:root {
+  /* Fonts */
+  --font-title: 'Manrope', sans-serif;
+  --font-subtitle: 'Montez', cursive;
+  --font-text: 'Inter', sans-serif;
+
+  /* Color */
+  --color-text: #6E7070;
+  --color-subtitle: #113D48;
+  --color-title: #113D48;
+  --color-card-bg: rgba(0,0,0,0.7);
+  --color-card-hover-bg: rgba(0,0,0,0.85);
+}
+
+/* Body */
+body {
+  font-family: var(--font-text);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+ strong {
+  font-weight: 700;
+  color: #F281AE;
+}
+ h1,h2,h3,h4,h5,p{
+  margin: 0;
+  padding: 0;
+}
+/* Layout */
+ .wrapper {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1512px;
+}
+
+ .container {
+  max-width: 1344px;
+  margin: 0 auto;
+}
+
+/* Body cố định (khi cần lock scroll) */
+body.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+/* Responsive */
+@media screen and (max-width: 834px) {
+  body {
+    font-size: 1.4rem;
+    letter-spacing: 0.06em;
+  }
+}

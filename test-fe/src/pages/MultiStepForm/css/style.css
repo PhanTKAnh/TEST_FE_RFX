@@ -1,0 +1,184 @@
+.msf-container {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.msf-wrapper{
+  padding: 50px 0;
+}
+.msf-title {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: var(--font-title, "Inter", sans-serif);
+  color: var(--color-subtitle, #333);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.msf-stepper {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  gap: 10px;
+  position: relative;
+}
+
+.msf-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+}
+
+/* Thanh nối */
+.msf-step::before,
+.msf-step::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  border-top: 3px solid #d3d3d3;
+  width: 100%;
+  z-index: 1;
+}
+
+.msf-step::before { left: -50%; }
+.msf-step::after { left: 50%; }
+
+.msf-step:first-child::before { content: none; }
+.msf-step:last-child::after { content: none; }
+
+.msf-step-counter {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  z-index: 2;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.msf-active .msf-step-counter {
+  background: #1CA8CB;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(28, 168, 203, 0.6);
+}
+
+.msf-completed .msf-step-counter {
+  background: #113D48;
+  color: #fff;
+}
+
+.msf-step-name {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--font-subtitle, "Manrope", sans-serif);
+  color: var(--color-subtitle, #444);
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+
+.msf-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.msf-left {
+  flex: 1;
+}
+
+.msf-right {
+  flex: 1;
+}
+.msf-form-title{
+      font-size: 22px;
+    font-weight: 700;
+    font-family: var(--font-title);
+    line-height: 24px;
+    letter-spacing: 0;
+    color: var(--color-subtitle);
+    margin:  10px 0;
+
+}
+.msf-form-wrapper,
+.msf-preview-wrapper {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.msf-final {
+  width: 100%;
+  padding: 20px;
+}
+.msf-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.msf-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.msf-form-group label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.msf-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.msf-error {
+  color: #d9534f;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+.msf-btn-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.msf-btn {
+  padding: 8px 18px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.msf-btn-primary {
+  background-color: #1ca8cb;
+  color: #fff;
+}
+
+.msf-btn-primary:hover {
+  background-color: #138399;
+}
+
+.msf-btn-secondary {
+  background-color: #ddd;
+  color: #333;
+}
+
+.msf-btn-secondary:hover {
+  background-color: #bbb;
+}

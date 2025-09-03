@@ -1,0 +1,64 @@
+.ft-hero {
+  padding: 80px 0;
+}
+
+.ft-hero-title {
+    font-family: var(--font-title);
+  font-size:32px;
+  font-weight: 700;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: var(--color-title);
+  line-height: 1.7;
+}
+
+.ft-hero-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ft-hero-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #113D48, #ff7e5f);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.ft-hero-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+.ft-hero-card-title {
+    font-family: var(--font-subtitle);
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  padding: 14px;
+  transition: background 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.ft-hero-card:hover .ft-hero-card-title {
+  letter-spacing: 1px;
+}
+
+.ft-hero-card-title::after {
+  content: "→";
+  display: inline-block;
+  margin-left: 6px;
+  transition: transform 0.3s ease;
+}
+
+.ft-hero-card:hover .ft-hero-card-title::after {
+  transform: translateX(4px);
+}
